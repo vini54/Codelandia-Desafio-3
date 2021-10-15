@@ -1,0 +1,39 @@
+$colors: (c1: #FF6363, c2: #63ECFF, c3: #F363FF, c4: #63FF73, c5: #FFDD63, c6: #6663FF);
+
+section.cards-sec {
+   .container {
+      @include container();
+      @include flex(row, space-between, center);
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 50px;
+      margin: 100px auto;
+      .card{
+         width: 340px;
+         height: 423px;
+         background-color: $white;
+         @include flex(column, center, center);
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+         div {
+            height: 50%;
+         }
+         .card-color{
+            background-color: $buttonColor;
+            width: 100%;
+         }
+         @each $key, $color in $colors {
+            .#{$key} {
+               background-color: $color;
+            }
+         }
+         .card-content {
+            @include flex(column, space-around, start);
+            padding: 25px;
+            p {
+               color: $text;
+               line-height: 1.5em;
+            }
+         }
+      }
+   }
+}

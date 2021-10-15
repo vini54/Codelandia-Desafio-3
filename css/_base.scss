@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Variáveis*/
+$bgSite: #d7d4ff;
+$buttonColor: #6c63ff;
+
+$white: #ffffff;
+$white300: #f9f9f9;
+
+$title: #2b2b2b;
+$text: #555555;
+
+$merriweather: 'Merriweather', serif;
+$lato: 'Lato', sans-serif;
+/*Reset*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: $lato;
+}
+html {
+   font-size: 62.5%;
+}
+body {
+   font-size: 1.6rem;
+   background-color: $white300;
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   font-family: $merriweather;
+   color: $title;
+}
+ul, ol {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+button, input {
+   border: 0;
+}
+button:focus, input:focus {
+   border: 0;
+}
+/* Functions */
+@mixin flex($direction, $justify, $align) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+}
+@mixin container(){
+   width: 90%;
+   max-width: 1250px;
+   margin: auto;
+}

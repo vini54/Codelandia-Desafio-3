@@ -1,0 +1,36 @@
+section.contact{
+   background-color: $bgSite;
+   padding: 50px 0;
+   form {
+      @include flex(column, space-between, center);
+      gap: 20px;
+      width: 90%;
+      max-width: 470px;
+      margin: auto;
+      .inputs{
+         @include flex(column, center, center);
+         width: 100%;
+         gap: 15px;
+         margin-top: 20px;
+         input, textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            outline: none;
+         }
+         #mensage {
+            border: none;
+         }
+      }
+      button {
+         background-color: $buttonColor;
+         color: $white;
+         height: 50px;
+         width: 100%;
+         margin-top: 10px;
+         border-radius: 10px;
+         cursor: pointer;
+         font-size: 20px;
+      }
+   }
+}

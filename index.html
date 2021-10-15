@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Desafio 3 - Codelândia</title>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <div class="group1">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
+            <button>Botão</button>
+         </div>
+         <div class="group2"><img src="./image/image.svg" alt="gifts-image"></div>
+      </div>
+   </header>
+   <section class="cards-sec">
+      <div class="container">
+         <div class="card">
+            <div class="card-color c1"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-color c2"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-color c3"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-color c4"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-color c5"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-color c6"></div>
+            <div class="card-content">
+               <h3>Título do card</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="contact">
+      <form>
+         <h2>Entre em contato</h2>
+         <div class="inputs">
+            <input type="text" name="nome" id="name" placeholder="Nome">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="number" name="phone" id="phone" placeholder="Telefone">
+            <textarea name="mensagem" id="mensage" cols="30" rows="8" placeholder="Mensagem"></textarea>
+         </div>
+         <button>Enviar mensagem</button>
+      </form>
+   </section>
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script>
+      const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+        ScrollReveal().reveal('.card', { delay: 400 });
+        ScrollReveal().reveal('.card .card-content', { delay: 500 });
+   </script>
+</body>
+</html>

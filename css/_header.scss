@@ -1,0 +1,31 @@
+header{
+   background-color: $bgSite;
+   .container {
+      @include container;
+      @include flex(row, space-between, null);
+      padding: 50px 0;
+      div {
+         width: 45%
+      }
+      .group1 {
+         min-height: 300px;
+         @include flex(column, space-around, start);
+         h1 {
+            color: $title;
+         }
+         p {
+            line-height: 1.5em;
+            color: $text;
+         }
+         button {
+            background-color: $buttonColor;
+            color: $white;
+            height: 50px;
+            width: 125px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+         }
+      }
+   }
+}
